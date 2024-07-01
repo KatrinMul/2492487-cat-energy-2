@@ -12,22 +12,34 @@
 <body class="page__body">
   <header class="header">
     <div class="header-menu">
-      <a class="header-menu_logo logo" href="#">
-        <img class="logo_image" src="#" alt="Логотип CAT ENERGY" width="33" height="38"></img>
-        <img class="logo_name" src="#" alt="CAT ENERGY" width="101" height="18"></img>
+      <a class="header-menu__logo logo" href="#">
+        <img class="logo__image" src="#" alt="Логотип CAT ENERGY" width="33" height="38">
+        <img class="logo__name" src="#" alt="CAT ENERGY" width="101" height="18">
       </a>
-      <button class="header-menu_button" type="button">
+      <button class="header-menu__button" type="button">
         <span class="visually-hidden">Закрыть меню</span>
       </button>
-      <ul class="header-menu_list main-menu">
-        <li class="main-menu_item">Главная</li>
-        <li class="main-menu_item">Каталог продукции</li>
-        <li class="main-menu_item">Подбор программы</li>
+      <ul class="header-menu__list main-menu">
+        <li class="main-menu__item">Главная</li>
+        <li class="main-menu__item">Каталог продукции</li>
+        <li class="main-menu__item">Подбор программы</li>
       </ul>
     </div>
   </header>
-  <main></main>
-  <footer></footer>
+  <main class="main-page">
+    <div class="main-page__hero hero">
+      <div class="hero-container">
+        <h1 class="hero-container__title">Функциональное питание для котов</h1>
+        <p class="hero-container__description">Занялся собой? Займись котом!</p>
+      </div>
+      <img class="hero__image" src="#" alt="Фотография корма" width="280" height="270">
+      <a class="hero__button button" href="#">Подобрать программу</a>
+    </div>
+    <div class="main-page__services"></div>
+    <div class="main-page__advantages"></div>
+    <div class="main-page__example"></div>
+  </main>
+  <footer class="footer"></footer>
 </body>
 
 </html>

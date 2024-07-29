@@ -17,7 +17,13 @@
 }
 
 .advantages__item {
+  padding-left: 100px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
 
+.advantages__item:nth-child(1) {
+  background-image: url("../../icons/stack.svg#advantage-back-1");
 }
 
 @media (min-width: 768px) {

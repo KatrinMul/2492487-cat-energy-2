@@ -3,7 +3,10 @@
 }
 
 .nav__button {
-
+  width: 20px;
+  height: 20px;
+  background: url("../../icons/stack.svg#icon-menu-cross") no-repeat center;
+  border: none;
 }
 
 .nav__list {

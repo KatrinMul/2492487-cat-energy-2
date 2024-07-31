@@ -1,16 +1,61 @@
 .nav {
-
+  border-top: 1px solid #e6e6e6;
+  position: relative;
 }
 
 .nav__button {
   width: 20px;
   height: 20px;
-  background: url("../../icons/stack.svg#icon-menu-cross") no-repeat center;
   border: none;
+  position: absolute;
+  top: -47px;
+  right: 20px;
+  cursor: pointer;
+  display: none;
 }
 
-.nav__list {
+.nav--opened .nav__button {
+  display: block;
+  background: url("../../icons/stack.svg#icon-menu-cross") no-repeat center;
+}
 
+.nav--closed .nav__button {
+  display: block;
+  background: url("../../icons/stack.svg#icon-menu-lines") no-repeat center;
+}
+
+.nav--closed .nav__list {
+  display: none;
+}
+
+.nav--opened .nav__list {
+  display: block;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+  z-index: 5;
+}
+
+@media (min-width: $tablet) {
+  .nav {
+    border: none;
+  }
+
+  .nav--closed .nav__button {
+    display: none;
+  }
+
+  .nav--opened .nav__button {
+    display: none;
+  }
+
+  .nav--closed .nav__list {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+  }
 }
 
 @media (min-width: $desktop) {

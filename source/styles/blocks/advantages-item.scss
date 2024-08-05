@@ -33,3 +33,12 @@
 .advantage-item__description--time::before {
   background-image: url("../../icons/stack.svg#advantage-back-4");
 }
+
+@media (min-width: $tablet) {
+  .advantage-item__description::before {
+    width: 80px;
+    height: 80px;
+    top: 40px;
+    left: 0;
+  }
+}

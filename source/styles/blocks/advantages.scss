@@ -28,11 +28,24 @@
   }
 
   .advantages__title {
+    margin-bottom: 32px;
     font-size: 60px;
     line-height: 60px;
   }
 
   .advantages__list {
+    margin-bottom: 92px;
     display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 37px 137px;
+  }
+
+  .advantages__item {
+    margin: 0;
+    padding: 151px 0 57px;
+  }
+
+  .advantages__item::after {
+
   }
 }

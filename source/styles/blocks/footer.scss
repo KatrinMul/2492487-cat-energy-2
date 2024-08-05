@@ -7,7 +7,9 @@
 }
 
 .footer__container {
-
+  padding: 26px 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .footer__invitation {
@@ -26,7 +28,7 @@
 }
 
 .footer__map {
-
+  width: 100%;
 }
 
 .footer__links {

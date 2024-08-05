@@ -1,5 +1,11 @@
 .links {
-
+  margin: 0 auto;
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 0;
+  gap: 40px;
 }
 
 .links__logo {
@@ -31,6 +37,7 @@
   line-height: 20px;
   text-decoration: none;
   position: relative;
+  align-self: flex-start;
 }
 
 .links__academy::after {
@@ -42,7 +49,8 @@
   mask-image: url("../../icons/stack.svg#logo-academy");
   background-color: #666666;
   top: 0;
-  right: -50px;
+  right: -140px;
+  transform: translateX(50%);
 }
 
 .links__academy:hover::after {

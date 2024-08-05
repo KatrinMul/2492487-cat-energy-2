@@ -1,5 +1,5 @@
 .services {
-
+  margin: 0 20px;
 }
 
 .services__list {
@@ -10,4 +10,10 @@
 
 .services__item {
 
+}
+
+@media (min-width: $tablet) {
+  .services {
+    margin: 0 30px;
+  }
 }

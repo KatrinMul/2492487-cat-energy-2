@@ -1,40 +1,43 @@
 .service-item {
-
-}
-
-.service-item__title {
-  margin: 0;
-  padding-left: 90px;
-  font-family: $primary-font;
-  font-size: 24px;
-  line-height: 37px;
-  color: $primary-dark-color;
-  text-transform: uppercase;
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin-bottom: 20px;
   position: relative;
 }
 
-.service-item__title--slim::before {
+.service-item--slim::before {
   content: "";
   width: 50px;
   height: 53px;
   background: url("../../icons/stack.svg#cat-back-1") no-repeat center;
   position: absolute;
-  left: 20;
-  top: -9;
+  left: 20px;
+  top: -9px;
 }
 
-.service-item__title--pro::before {
+.service-item--pro::before {
   content: "";
   width: 67px;
   height: 50px;
   background: url("../../icons/stack.svg#cat-back-2") no-repeat center;
   position: absolute;
   left: 13px;
-  top: -6;
+  top: -6px;
+}
+
+.service-item__title {
+  margin: 0;
+  margin-bottom: 29px;
+  padding-left: 90px;
+  font-family: $primary-font;
+  font-size: 24px;
+  line-height: 37px;
+  color: $primary-dark-color;
+  text-transform: uppercase;
 }
 
 .service-item__description {
-  margin: 0;
+  margin: 0 13px 38px 0;
 }
 
 .service-item__link {
@@ -54,7 +57,7 @@
   background: url("../../icons/stack.svg#icon-arrow") no-repeat center;
   position: absolute;
   right: -50px;
-  top: 10px;
+  top: 6px;
 }
 
 .service-item__link:hover::after {
@@ -81,9 +84,37 @@
 }
 
 @media (min-width: $tablet) {
+  .service-item {
+    background-color: #f2f2f2;
+    padding: 77px 0 53px 52px;
+    margin-bottom: 30px;
+  }
+
+  .service-item--slim::before {
+    width: 200px;
+    height: 211px;
+    left: auto;
+    right: 50px;
+    top: 4px;
+  }
+
+  .service-item--pro::before {
+    width: 268px;
+    height: 200px;
+    left: auto;
+    right: 50px;
+    top: 14px;
+  }
+
   .service-item__title {
+    padding: 0;
+    margin-bottom: 24px;
     font-size: 36px;
     line-height: 36px;
+  }
+
+  .service-item__description {
+    margin: 0 316px 48px 0;
   }
 
   .service-item__link {

@@ -1,5 +1,5 @@
 .hero {
-
+  margin-bottom: 20px;
 }
 
 .hero__container {
@@ -26,9 +26,7 @@
 }
 
 .hero__button {
-  margin: 0;
-  padding: 0;
-  display: block;
+  margin: 0 20px;
 }
 
 @media (min-width: $tablet) {

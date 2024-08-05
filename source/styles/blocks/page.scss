@@ -17,3 +17,10 @@
   }
 }
 
+@media (min-width: $desktop) {
+  .page__body {
+    margin: 0 auto;
+    max-width: 1220px;
+  }
+}
+

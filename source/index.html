@@ -69,17 +69,17 @@
     <section class="main-page__advantages advantages">
       <h2 class="advantages__title">Как это работает</h2>
       <ul class="advantages__list">
-        <li class="advantages__item advantage-item">
-          <p class="advantage-item__description advantage-item__description--benefit">Функциональное питание содержит только полезные питательные вещества.</p>
+        <li class="advantages__item advantage-item advantage-item--benefit">
+          <p class="advantage-item__description">Функциональное питание содержит только полезные питательные вещества.</p>
         </li>
-        <li class="advantages__item advantage-item">
-          <p class="advantage-item__description advantage-item__description--cook">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
+        <li class="advantages__item advantage-item advantage-item--cook">
+          <p class="advantage-item__description">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
         </li>
-        <li class="advantages__item advantage-item">
-          <p class="advantage-item__description advantage-item__description--meal">Замените один-два приема обычной еды на наше функциональное питание.</p>
+        <li class="advantages__item advantage-item advantage-item--meal">
+          <p class="advantage-item__description">Замените один-два приема обычной еды на наше функциональное питание.</p>
         </li>
-        <li class="advantages__item advantage-item">
-          <p class="advantage-item__description advantage-item__description--time">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
+        <li class="advantages__item advantage-item advantage-item--time">
+          <p class="advantage-item__description">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
         </li>
       </ul>
     </section>
@@ -88,25 +88,32 @@
       <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
       <div class="example__points points">
         <dl class="points__list">
-          <dt class="points__name">5 кг</dt>
-          <dd class="points__description">снижение веса</dd>
-          <dt class="points__name">60 дней</dt>
-          <dd class="points__description">затрачено времени</dd>
+          <div class="points__wraper">
+            <dt class="points__name">5 кг</dt>
+            <dd class="points__description">снижение веса</dd>
+          </div>
+          <div class="points__wraper">
+            <dt class="points__name">60 дней</dt>
+            <dd class="points__description">затрачено времени</dd>
+          </div>
+        </dl>
+        <dl class="points__list-price">
           <dt class="points__name--secondary-style">15 000 руб.</dt>
           <dd class="points__description--secondary-style">Затраты на питание:</dd>
         </dl>
-        <div class="example__slider slider">
-          <img class="slider__image" src="#" alt="Пример" width="280" height="256">
-        </div>
       </div>
+      <div class="example__slider slider">
+        <img class="slider__image" src="images/cat-mobile-before@1x.png" srcset="images/cat-mobile-before@2x.png 2x" alt="Пример" width="280" height="256">
+      </div>
+
     </section>
   </main>
   <footer class="footer">
     <section class="footer__address">
       <h2 class="visually-hidden">Адрес CAT ENERGY</h2>
       <div class="footer__container">
-        <p class="footer__invitation">приглашаем к сотрудничеству дилеров!</p>
-        <address class="footer__address-text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+        <p class="footer__invitation">приглашаем <br>к сотрудничеству дилеров!</p>
+        <address class="footer__address-text">ул. Большая Конюшенная, д. 19/8 <span class="footer__address-text-city">Санкт-Петербург</span></address>
       </div>
       <div class="footer__map map">
         <div class="map__google">
@@ -114,6 +121,8 @@
         </div>
         <div class="map__image">
           <picture>
+            <source type="image/jpeg" media="(min-width:1440px)" srcset="images/map-location-desktop@1x.jpeg 1x, images/map-location-desktop@2x.jpeg 2x" width="1440" height="400">
+            <source type="image/jpeg" media="(min-width:768px)" srcset="images/map-location-tablet@1x.jpeg 1x, images/map-location-tablet@2x.jpeg 2x" width="768" height="400">
             <img class="map__picture" src="images/map-location-mobile@1x.jpeg" alt="Карта с расположением" srcset="images/map-location-mobile@2x.jpeg 2x" width="320" height="362">
           </picture>
         </div>

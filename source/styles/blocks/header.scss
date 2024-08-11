@@ -26,15 +26,18 @@
 @media (min-width: $tablet) {
   .header {
     background: none;
+    height: auto;
     display: flex;
     justify-content: space-between;
-    // align-items: center;
-    padding: 25px 30px;
+    align-items: center;
+    padding: 25px 34px 0 30px;
+    box-sizing: border-box;
+    margin-bottom: 60px;
   }
 
   .header__logo {
+    position: unset;
     margin: 0;
-    margin-right: 20px;
-    align-self: flex-start;
+    margin-right: 30px;
   }
 }

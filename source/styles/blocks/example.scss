@@ -1,6 +1,6 @@
 .example {
   background-color: #eaeaea;
-  padding: 25px 20px 0;
+  padding: 25px 20px 35px;
 }
 
 .example__title {
@@ -26,8 +26,24 @@
 }
 
 @media (min-width: $tablet) {
+  .example {
+    background: none;
+    padding: 45px 0 0;
+  }
+
   .example__title {
+    padding: 0 30px;
     font-size: 60px;
     line-height: 60px;
+    margin-bottom: 60px;
+  }
+
+  .example__description {
+    padding: 0 30px;
+    margin-bottom: 55px;
+  }
+
+  .example__points {
+    padding: 0 30px;
   }
 }

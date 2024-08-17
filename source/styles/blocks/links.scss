@@ -77,13 +77,14 @@
 @media (min-width: $tablet) {
   .links {
     background-color: #f2f2f2;
-    padding: 62px 30px;
+    padding: 55px 30px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
   }
 
   .links__logo {
+    height: 35px;
     margin-right: 36px;
   }
 
@@ -94,5 +95,11 @@
   .links__academy::after {
     top: -7px;
     right: 0;
+  }
+}
+
+@media (min-width: $desktop) {
+  .links {
+    padding: 66px 110px;
   }
 }

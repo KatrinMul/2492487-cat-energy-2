@@ -48,3 +48,14 @@
 
   }
 }
+
+@media (min-width: $desktop) {
+  .advantages {
+    margin: 0 110px 69px;
+  }
+
+  .advantages__list {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 77px;
+  }
+}

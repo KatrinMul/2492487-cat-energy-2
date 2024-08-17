@@ -28,3 +28,9 @@
     z-index: 5;
   }
 }
+
+@media (min-width: $desktop) {
+  .slider {
+    padding: 0;
+  }
+}

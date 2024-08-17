@@ -116,3 +116,24 @@
     font-size: 20px;
   }
 }
+
+@media (min-width: $desktop) {
+  .points {
+    margin-bottom: 0;
+  }
+
+  .points__wraper {
+    margin-bottom: 62px;
+  }
+
+  .points__description {
+    width: auto;
+    background-color: #f2f2f2;
+  }
+
+  .points__list-price {
+    flex-direction: row-reverse;
+    gap: 63px;
+  }
+}
+

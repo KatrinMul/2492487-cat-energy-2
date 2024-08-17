@@ -105,7 +105,21 @@
         </div>
       </div>
       <div class="example__slider slider">
-        <img class="slider__image" src="images/cat-mobile-before@1x.png" srcset="images/cat-mobile-before@2x.png 2x" alt="Пример" width="280" height="256">
+        <ul class="slider__list">
+          <li class="slider__lever slider__lever--before">
+            <picture>
+              <source media="(min-width:768px)" srcset="images/cat-tablet-before@1x.png 1x, images/cat-tablet-before@2x.png 2x" type="image/png" width="560" height="512">
+              <img class="slider__image" src="images/cat-mobile-before@1x.png" srcset="images/cat-mobile-before@2x.png 2x" alt="Пример" width="280" height="256">
+            </picture>
+          </li>
+          <li class="slider__lever slider__lever--after">
+            <picture>
+              <source media="(min-width:768px)" srcset="images/cat-tablet-after@1x.png 1x, images/cat-tablet-after@2x.png 2x" type="image/png" width="560" height="512">
+              <img class="slider__image" src="images/cat-mobile-after@1x.png" srcset="images/cat-mobile-after@2x.png 2x" alt="Пример" width="280" height="256">
+            </picture>
+          </li>
+        </ul>
+        <button class="slider__toggle" type="button"><span class="visually-hidden">Кот до/после</span></button>
       </div>
 
     </section>

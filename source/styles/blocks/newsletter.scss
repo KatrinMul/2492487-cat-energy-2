@@ -1,9 +1,10 @@
 .newsletter {
-
+  padding: 0 20px;
 }
 
 .newsletter__title {
   margin: 0;
+  margin-bottom: 32px;
   font-family: $primary-font;
   font-size: 24px;
   line-height: 24px;
@@ -12,6 +13,8 @@
 
 .newsletter__description {
   margin: 0;
+  margin-bottom: 24px;
+  text-align: center;
   font-family: $primary-font;
   font-size: 16px;
   line-height: 24px;
@@ -28,15 +31,20 @@
 
 .newsletter__field-email {
   margin: 0;
-  padding: 0;
+  margin-bottom: 16px;
+  padding: 13px;
+  width: 100%;
   font-family: $primary-font;
   font-size: 20px;
   line-height: 30px;
   color: $secondary-color;
   text-transform: uppercase;
+  border: 1px solid #cdcdcd;
+  box-sizing: border-box;
 }
 
 .newsletter__button {
+  width: 100%;
   font-size: 20px;
   line-height: 26px;
 }

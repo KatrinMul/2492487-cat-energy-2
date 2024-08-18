@@ -140,7 +140,7 @@
     width: 720px;
     background-color: rgba(104, 183, 56, 0.85);
     position: absolute;
-    left: 720px;
+    left: 50%;
     top: 0;
     z-index: -5;
   }
@@ -154,7 +154,7 @@
     background: url("../../images/index-background-desktop@1x.jpeg") no-repeat 0 0;
     background-size: cover;
     top: 0;
-    left: 720px;
+    left: 50%;
     z-index: -10;
   }
 

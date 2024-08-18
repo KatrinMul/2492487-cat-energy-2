@@ -1,9 +1,15 @@
 .additional-card {
+  border-bottom: 1px solid #cdcdcd;
+  padding: 13px 0 18px;
+}
 
+.additional-card:first-child {
+  border-top: 1px solid #cdcdcd;
 }
 
 .additional-card__title {
   margin: 0;
+  margin-bottom: 13px;
   font-family: $primary-font;
   font-size: 16px;
   line-height: 16px;
@@ -12,7 +18,11 @@
 }
 
 .additional-card__points {
-
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 .additional-card__points-name {
@@ -26,7 +36,7 @@
 }
 
 .additional-card__button {
-
+  width: 100%;
 }
 
 @media (min-width: $tablet) {

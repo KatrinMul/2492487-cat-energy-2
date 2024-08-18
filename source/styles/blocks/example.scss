@@ -54,10 +54,22 @@
     justify-content: space-between;
     background: #f2f2f2;
     padding: 0 110px 75px;
+    position: relative;
+  }
+
+  .example::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 151px;
+    background-color: #ffffff;
+    top: 0;
+    left: 0;
   }
 
   .example__wraper {
     width: 436px;
+    z-index: 1;
   }
 
   .example__title {

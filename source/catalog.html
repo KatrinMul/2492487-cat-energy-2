@@ -11,6 +11,8 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="styles/styles.css">
   <script src="scripts/index.js" defer></script>
+  <link rel="preload" href="./fonts/lato/Lato-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/oswald/oswaldregular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
 </head>
 
 <body class="page__body">
@@ -241,7 +243,7 @@
       <form class="newsletter__form" action="https://echo.htmlacademy.ru/" method="post">
         <label class="newsletter__label-email" for="newsletter-email"></label>
         <input class="newsletter__field-email" type="email" placeholder="kuklachev@gmail.com" name="newsletter-email" id="newsletter-email" required>
-        <button class="newsletter__button button" type="button">Подписаться</button>
+        <button class="newsletter__button button" type="submit">Подписаться</button>
       </form>
     </section>
   </main>

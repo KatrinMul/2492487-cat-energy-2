@@ -166,11 +166,15 @@
   position: absolute;
   width: 280px;
   height: 290px;
-  background: #c0b4b4 url("../../images/catalog-background-mobile@1x.jpeg") 50% 50%;
+  background: #c0b4b4 image-set(url("../../images/catalog-background-mobile@1x.webp"), url("../../images/catalog-background-mobile@1x.jpeg")) 50% 50%;
   top: 0;
   left: 50%;
   transform: translateX(-50%);
   z-index: -1;
+
+  @media (min-resolution: 2dppx) {
+    background-image: image-set(url("../../images/catalog-background-mobile@2x.webp"), url("../../images/catalog-background-mobile@2x.jpeg"));
+  }
 }
 
 .catalog__additional-description-wrapper {
@@ -267,7 +271,11 @@
   .catalog__additional-description::before {
     width: 708px;
     height: 200px;
-    background: #c0b4b4 url("../../images/catalog-background-tablet@1x.jpeg") 50% 50%;
+    background: #c0b4b4 image-set(url("../../images/catalog-background-tablet@1x.webp"), url("../../images/catalog-background-tablet@1x.jpeg")) 50% 50%;
+
+    @media (min-resolution: 2dppx) {
+      background-image: image-set(url("../../images/catalog-background-tablet@2x.webp"), url("../../images/catalog-background-tablet@2x.jpeg"));
+    }
   }
 }
 
@@ -351,6 +359,10 @@
   .catalog__additional-description::before {
     width: 245px;
     height: 288px;
-    background: #c0b4b4 url("../../images/catalog-background-desktop@1x.jpeg") 50% 50%;
+    background: #c0b4b4 image-set(url("../../images/catalog-background-desktop@1x.webp"), url("../../images/catalog-background-desktop@1x.jpeg")) 50% 50%;
+
+    @media (min-resolution: 2dppx) {
+      background-image: image-set(url("../../images/catalog-background-desktop@2x.webp"), url("../../images/catalog-background-desktop@2x.jpeg"));
+    }
   }
 }
